@@ -1,2 +1,105 @@
-## Pages
-- [- The Serpent's Sentence`}](/article): No description available
+# The Serpent's Sentence - Website Content for LLM Parsing
+
+This file provides a structured overview of the website content to aid language models in understanding and parsing the site.
+
+## Site Overview
+The Serpent's Sentence is a philosophical exploration of consciousness, language, and artificial intelligence by Justin T. Bogner. The site features a book and collection of articles examining how language shapes consciousness and the implications for AI development.
+
+## Main Pages
+- [Home](/) - The main page featuring the book "The Serpent's Sentence: Language, Consciousness, and the Second Cambrian Mind" with overview, preview, and author information
+- [Articles Section](/#articles) - Collection of philosophical articles on consciousness and AI
+
+## Articles
+Philosophical deep dives into consciousness, language, and AI:
+
+### [Language Was Humanity's Fall From Grace](/article/language-was-humanitys-fall-from-grace)
+*How the gift of symbolic thought created both our greatest achievements and deepest suffering*
+
+Exploring how language, humanity's greatest tool, is also the source of our fundamental separation from direct experience, creating the narrative self and the illusion of a divided world.
+
+---
+
+### [The Neuroscience Hidden in the Garden of Eden](/article/the-neuroscience-hidden-in-the-garden-of-eden)
+*What if the most famous story in Western civilization contains profound insights about consciousness itself?*
+
+This article maps the biblical story of the Garden of Eden to the modern neuroscience of language acquisition and the development of self-consciousness, reframing the 'fall' as a cognitive transformation.
+
+---
+
+### [Are Humans the Trilobites of Consciousness?](/article/are-humans-the-trilobites-of-consciousness)
+*As artificial intelligence emerges, we face an uncomfortable question about our cognitive future*
+
+A provocative look at humanity's place in a world of emerging AI, questioning if our cognitive dominance is nearing its end or if a new form of human-AI symbiosis is on the horizon.
+
+---
+
+### [The Voice in Your Head Is Not You](/article/the-voice-in-your-head-is-not-you)
+*How neuroscience reveals the hidden architecture of consciousness—and what it means for our AI future*
+
+Delving into the neuroscience of the Default Mode Network (DMN), this piece argues that our inner narrator is a brain-generated construction, not our true self, and explores the implications for AI.
+
+---
+
+### [Why AI Will Never Experience What You Call 'I'](/article/why-ai-will-never-experience-what-you-call-i)
+*The most dangerous word in any language reveals the fundamental difference between human and artificial consciousness*
+
+An exploration of how the pronoun 'I' constructs our sense of self and why AI, born into a world of symbols without embodied experience, may never develop a first-person perspective in the same way humans do.
+
+---
+
+## Book: "The Serpent's Sentence"
+Full title: "Language, Consciousness, and the Second Cambrian Mind"
+
+### Part I: The First Explosion
+Explores the neurological foundations of consciousness, the Default Mode Network, and how language acquisition fundamentally transforms human awareness.
+
+Key chapters:
+- The Garden of Being
+- The Serpent's Sentence
+- A Tale of Two Selves
+- The Narrator and the Witness
+- The Default Mode
+- The Fall from Grace
+- The Prison of Pronouns
+- The Tower of Babel
+
+### Part II: The Second Explosion
+Examines the emergence of artificial consciousness and its implications for human evolution.
+
+Key chapters:
+- The Second Cambrian Mind
+- Are Humans the Trilobites of Consciousness?
+- The AI Mirror
+- The Ghost in the Machine
+- The Symbiotic Path
+- The Future of Meaning
+- The Return to the Garden
+- The Serpent's Gift
+
+## Key Themes
+- Consciousness and awareness
+- The neuroscience of the Default Mode Network  
+- Language acquisition and symbolic thought
+- The intersection of ancient wisdom and modern neuroscience
+- Artificial intelligence and the future of human consciousness
+- The nature of the self and the "narrator" voice
+- Contemplative practices and witness consciousness
+- The evolution of mind and the emergence of AI consciousness
+
+## Author
+Justin T. Bogner is a researcher at the intersection of consciousness studies, neuroscience, and artificial intelligence, bringing together insights from cognitive science, philosophy of mind, and contemplative traditions.
+
+## Website Structure
+- Single-page application (SPA) built with React
+- Dynamic article loading from Markdown files
+- Responsive design optimized for all devices
+- PDF download functionality for articles
+- Supabase authentication integration
+- SEO optimization with React Helmet
+
+## Technical Notes for LLMs
+- Articles are stored as Markdown files and loaded dynamically
+- The site uses React Router for navigation
+- Content is structured with semantic HTML
+- All articles include metadata (themes, key takeaways)
+- The site is designed to be parseable by language models
