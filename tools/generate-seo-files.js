@@ -67,7 +67,7 @@ async function loadArticlesData() {
 }
 
 function generateSitemap(articles) {
-  const baseUrl = 'https://jbogner1618.github.io/ss_Websitte'; // Update this to match your actual domain
+  const baseUrl = 'https://jbogner1618.github.io/The_Serpents_Sentence_Website'; // Updated to match repository name
   const currentDate = new Date().toISOString().split('T')[0];
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -97,7 +97,7 @@ function generateSitemap(articles) {
 }
 
 function generateRobotsTxt() {
-  const baseUrl = 'https://jbogner1618.github.io/ss_Websitte'; // Update this to match your actual domain
+  const baseUrl = 'https://jbogner1618.github.io/The_Serpents_Sentence_Website'; // Updated to match repository name
   
   return `User-agent: *
 Allow: /

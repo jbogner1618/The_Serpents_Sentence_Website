@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://jbogner1618.github.io/ss_Websitte/sitemap.xml
+Sitemap: https://jbogner1618.github.io/The_Serpents_Sentence_Website/sitemap.xml
 
 # Allow LLM-specific file
 Allow: /llms.txt
