@@ -205,6 +205,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: '/ss_Websitte/', // Base path for GitHub Pages (repository name)
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
