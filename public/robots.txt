@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jbogner1618.github.io/ss_Websitte/sitemap.xml
+
+# Allow LLM-specific file
+Allow: /llms.txt
+
+# Disallow build artifacts and source files
+Disallow: /assets/
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /*.map
+
+# Allow CSS and JS that are part of the built app
+Allow: /assets/*.css
+Allow: /assets/*.js

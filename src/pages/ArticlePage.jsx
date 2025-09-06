@@ -102,8 +102,61 @@ const ArticlePage = () => {
       <Helmet>
         <title>{`${article.title} - The Serpent's Sentence`}</title>
         <meta name="description" content={article.summary} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://jbogner1618.github.io/ss_Websitte/article/${article.slug}`} />
         <meta property="og:title" content={`${article.title} - The Serpent's Sentence`} />
         <meta property="og:description" content={article.summary} />
+        <meta property="og:site_name" content="The Serpent's Sentence" />
+        <meta property="article:author" content="Justin T. Bogner" />
+        <meta property="article:section" content="Philosophy" />
+        {article.themes && article.themes.map((theme, index) => (
+          <meta key={index} property="article:tag" content={theme} />
+        ))}
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={`https://jbogner1618.github.io/ss_Websitte/article/${article.slug}`} />
+        <meta property="twitter:title" content={`${article.title} - The Serpent's Sentence`} />
+        <meta property="twitter:description" content={article.summary} />
+        
+        {/* Additional SEO */}
+        <link rel="canonical" href={`https://jbogner1618.github.io/ss_Websitte/article/${article.slug}`} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Justin T. Bogner" />
+        <meta name="language" content="EN" />
+        <meta name="keywords" content={`consciousness, philosophy, neuroscience, ${article.themes ? article.themes.join(', ') : ''}`} />
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": article.title,
+            "description": article.summary,
+            "author": {
+              "@type": "Person",
+              "name": "Justin T. Bogner",
+              "description": "Researcher at the intersection of consciousness studies, neuroscience, and artificial intelligence"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Justin T. Bogner"
+            },
+            "datePublished": "2024-01-01", // You might want to add actual publish dates to articles
+            "dateModified": "2024-01-01",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://jbogner1618.github.io/ss_Websitte/article/${article.slug}`
+            },
+            "url": `https://jbogner1618.github.io/ss_Websitte/article/${article.slug}`,
+            "about": article.themes,
+            "keywords": article.themes ? article.themes.join(', ') : '',
+            "inLanguage": "en",
+            "genre": "Philosophy"
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-slate-900 text-white selection:bg-amber-500 selection:text-black">
         <div className="fixed top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-400 to-blue-500 z-50"></div>
